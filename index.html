@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Bikcraft - Bicicletas Personalizadas</title> <!-- Titúlo da página, texto que aparece na aba do navegador -->
+        <!-- Até 70 caracteres -->
+
+        <meta name="description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos de passeio, retrô e esportiva."> <!-- Texto que aparece abaixo da url em uma pesquisa de um buscador google, bing... -->
+        <!-- Até 140 caracteres -->
+
+
+        <!-- CADA PÁGINA PRECISA TER DESCRIPTION e TITLE PRÓPRIOS PARA CADA PÁGINA -->
+
+        <!-- OGP PARA COMPARTILHAMENTO -->
+        <meta property="og:type" content="website"/> <!-- Tipo de arquivo compartilhado, website, article...-->
+        <meta property="og:title" content="Bikcraft - Bicicletas Personalizadas"/> <!-- Titúlo, PRECISA SER O MESMO DO TITLE ACIMA! -->
+        <meta property="og:description" content="Compre a sua bicicleta personalizada na Bikcraft. Possuímos modelos de passeio, retrô e esportiva."/>  <!-- Descrição, PRECISA SER O MESMO DA DESCRIPTION ACIMA! -->
+        <meta property="og:url" content="https://bikcraft.com"/> <!-- URL da página compartilhada, ALTERE DEPEDENDO DA PÁGINA!-->
+        <meta property="og:image" content="https://bikcraft/img/og-image.png"/> <!-- Imagem que aparece ao lado no link compartilhado, use a mesma para todo o projeto para consistência! -->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Adapta o tamanho da viewport da página(largura), dependendo do tamanho da tela do dispositivo, NÃO ALTERE! -->
+
+        <link rel="shortcut icon" href="favicon.ico"> <!-- Icone que aparece na aba no navegador, use o mesmo para todo o projeto -->
+
+       
+        <link rel="stylesheet" href="style.css"> 
+        <script>document.documentElement.classList.add("js")</script>  <!-- Adiciona a class 'js' na tag global HTML, para verificação se o navegador suporta ou não javascript -->    
+    </head>   
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <a href="index.html" class="grid-4">
+                    <img src="img/bikcraft.svg" alt="bikcraft">
+                </a>
+                <nav class="grid-12 header_menu">
+                    <ul>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="portfolio.html">Portfólio</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="introducao">
+            <div class="container">
+                <h1 data-anime="400" class="fadeInDown">Bicicletas Feitas a Mão</h1>
+                <blockquote data-anime="800" class="fadeInDown quote-externo">
+                    <p>"não tenha nada em sua casa que você 
+                        não considere útil ou acredita ser bonito"
+                    </p>
+                    <cite>William Morris</cite>                    
+                </blockquote>
+                <a data-anime="1200" href="produtos.html" class="btn">Orçamento</a>
+            </div>
+        </section>
+
+        <section class="container produtos fadeInDown" data-anime="1600">
+            <h2 class="subtitulo">produtos</h2>
+
+            <ul class="produtos_lista">
+                <li class="grid-1-3">
+                    <div class="produtos_icone">
+                        <img src="img/produtos/passeio.svg" alt="bikcraft passeio">
+                    </div>                   
+                    <h3>Passeio</h3>
+                    <p>Ainda assim, existem dúvidas a respeito de como a necesssidade de renovação.</p>
+                </li>
+            </ul>
+
+            <ul class="produtos_lista">
+                <li class="grid-1-3">
+                    <div class="produtos_icone">
+                        <img src="img/produtos/esporte.svg" alt="bikcraft esporte">
+                    </div>                   
+                    <h3>esporte</h3>
+                    <p>Ainda assim, existem dúvidas a respeito de como a necesssidade de renovação.</p>
+                </li>
+            </ul>
+            
+            <ul class="produtos_lista">
+                <li class="grid-1-3">
+                    <div class="produtos_icone">
+                        <img src="img/produtos/retro.svg" alt="bikcraft retro">
+                    </div>                   
+                    <h3>retrô</h3>
+                    <p>Ainda assim, existem dúvidas a respeito de como a necesssidade de renovação.</p>
+                </li>
+            </ul>
+
+            <div class="call call-bg-branco">
+                <p>Clique aqui e veja os detalhes dos produtos</p>
+                <a href="produtos.html" class="btn btn-preto"> produtos</a>
+            </div>
+        </section>
+
+        <section class="portfolio_home">
+            <div class="container">
+                <h2 class="subtitulo">portfólio</h2>
+
+                <ul class="portfolio-lista">
+                    <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="bicicleta retro"></li>
+                    <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="bicicleta passeio"></li>
+                    <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="bicicleta esportiva"></li>
+                </ul>                
+
+                <div class="call">
+                    <p>Conheça mais o nosso portfólio</p>
+                    <a href="portfolio.html" class="btn"> portfólio</a>
+                </div>                
+            </div>
+        </section>
+
+        <section class="container qualidade">
+            <h2 class="subtitulo">qualidade</h2>
+            <img src="img/bikcraft-qualidade.svg" alt="bikcraft">
+
+            <ul class="qualidade_lista">
+                <li class="grid-1-3">
+                    <h3>Durabilidade</h3>
+                    <p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem </p>
+                </li>
+                <li class="grid-1-3">
+                    <h3>Design</h3>
+                    <p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem </p>
+                </li>
+                <li class="grid-1-3">
+                    <h3>Sustentabilidade</h3>
+                    <p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem </p>
+                </li>
+            </ul>
+
+            <div class="call call-bg-branco">
+                <p>Conheça mais a nossa história</p>
+                <a href="sobre.html" class="btn btn-preto">Sobre</a>
+            </div>
+        </section>
+
+        <div class="quebra">
+                <blockquote class="quote-externo container">
+                    <p>"O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana"</p>
+                    <cite>William Morris</cite>
+                </blockquote>        
+        </div>
+
+        <footer>
+            <div class="footer">
+                <div class="container">
+                    <div class="grid-8 footer_historia">
+                        <h3>nossa história</h3>
+                        <p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana. interesse por todos os detalhes da vida cotidiana</p>
+                    </div>
+
+                    <div class="grid-4 footer_contato">
+                        <h3>contato</h3>
+                        <ul class="lista_contato">
+                            <li>- (27) 9 9999-9999</li>
+                            <li>- contato@bikcraft.com.br</li>
+                            <li>- Botafogo - RJ</li>
+                        </ul>
+                    </div>
+
+                    <div class="grid-4 footer_redes">
+                        <h3>redes sociais</h3>
+                        <ul>
+                            <li><a href="#"><img src="img/redes-sociais/facebook.svg" alt="facebook bikcraft"></a></li>
+                            <li><a href="#"><img src="img/redes-sociais/instagram.svg" alt="instagram bikcraft"></a></li>
+                            <li><a href="#"><img src="img/redes-sociais/twitter.svg" alt="twitter bikcraft"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copy">
+                <div class="container">
+                    <p class="grid-16">Bikcraft 2020 - Alguns direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="js/simple-anime.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,856 @@
+/* Estilos gerais */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+img {
+    display: block; /* ajuda a retirar uma "borda" invisivel das imagens*/
+    max-width: 100%; /* Macete para tornar as imagens fluidas */
+}
+
+.btn {   
+    border: 3px #fec63e solid; 
+    padding: 10px 30px;
+    color: #FEC63E;   
+    font-size: 14px;
+    line-height: 20px; 
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1em;  
+    margin-bottom: 80px  
+}
+
+.btn:hover {
+    color: white;
+    border-color: white;
+}
+.btn.btn-preto:hover {
+    color: black;
+    border-color: black;
+}
+.subtitulo {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+}
+h3.subtitulo{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.subtitulo::after {
+    content: ""; /* SEMPRE COLOQUE CONTENT! */
+    display: block; /* Normal in-line*/
+    width: 60px;
+    height: 3px;
+    background-color: black;
+    margin: 8px auto;  
+}
+
+.titulo h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 36px;    
+    padding-top: 40px;
+    letter-spacing: .1em;
+    text-transform: uppercase; 
+}
+
+.titulo {       
+    margin-top: 92px;
+    width: 100%;
+    height: 160px;
+    text-align: center;        
+    color: white;   
+}
+
+.titulo h1::after{
+    content: "";
+    display: block;
+    margin: 5px auto 10px auto;
+    width: 60px;
+    height: 3px;
+    background-color: white;
+}
+
+.subtitulo-interno {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.subtitulo-interno::after{
+    content: "";
+    width: 60px;
+    height: 3px;
+    display: block;
+    background-color: black;
+    margin: 8px 0 15px 0;
+}
+
+
+
+
+/* ----- Index/Home ----- */
+
+/* Header */
+
+.header {
+    position: fixed; /* header permanece fixo no rolamento da página */
+    top: 0;
+    width: 100%;
+    background-color: #FEC63E;
+    padding: 15px 0;
+    z-index: 10;    /* classifica elementos acima ou abaixo de outros, como camadas*/
+}
+
+.header_menu {        
+    text-align: right;
+}
+
+.header_menu ul li {   
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.header_menu ul li a {
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    line-height: 20px;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.header_menu ul li a:hover {
+    color: white;
+}
+
+.header_menu ul li a.menu_ativo {
+    color: white;
+}
+
+/* Introdução */
+
+.introducao {
+    height: 380px;
+    width: 100%;    
+    background: url("../img/bg.jpg") no-repeat center;
+    background-size: cover;
+    margin-top: 92px;
+    text-align: center;
+    padding-top: 74px;
+}
+
+.introducao h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;    
+}
+
+.quote-externo {
+    max-width: 300px;
+    margin: 0 auto;
+    color: white;
+    margin-bottom: 40px;
+}
+.quote-externo p {
+    font-style: italic;
+}
+
+.quote-externo p::before, .quote-externo p::after {
+    content: ""; /* SEMPRE COLOQUE CONTENT! */
+    display: block; /* Normal in-line*/
+    width: 60px;
+    height: 3px;
+    background-color: white;
+    margin: 14px auto 10px auto;
+}
+.quote-externo cite{
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+
+/* produtos */
+
+.produtos {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.produtos_lista li {
+    background-color: #FEC63E;
+    text-align: center;    
+}
+
+.produtos_icone img{
+    margin: 0 auto; /* macete para centralizar */
+}
+
+.produtos_lista li h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    padding-top: 10px;
+}
+
+.produtos_lista li h3::after {
+    content: ""; /* SEMPRE COLOQUE CONTENT! */
+    display: block; /* Normal in-line*/
+    width: 60px;
+    height: 3px;
+    background-color: black;
+    margin: 2px auto;  
+}
+
+.produtos_icone {
+    background-color: black;    
+    padding: 20px;
+}
+
+.produtos_lista p {
+    padding: 10px 20px 20px 20px;
+}
+
+.call {
+    text-align: center;    
+    padding-top: 40px;
+    clear: both;
+}
+
+.call p{
+padding-bottom: 20px;
+color: white;
+}
+
+.call-bg-branco p{
+    color: black;
+}
+
+/* portfolio */
+
+.portfolio_home {
+    background-color: black;
+    width: 100%;  
+    margin: 40px auto 60px auto;  
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.portfolio_home h2.subtitulo{
+    color: #FEC63E;
+}
+
+.portfolio_home h2.subtitulo::after {    
+    background-color: #FEC63E;
+}
+
+.portfolio-lista li:last-child { /* aplica determinado elemento ao último elemento desta lista */
+    margin-top: 20px;
+}
+.portfolio .call p {
+    color: white;
+}
+
+/* qualidade*/
+
+.qualidade {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.qualidade::after {
+    content: ""; /* SEMPRE COLOQUE CONTENT! */
+    width: 634px;
+    height: 83px;
+    display: block; /* Normal in-line*/
+    background: url(../img/linhas.svg);
+    position: absolute; /* use para poder posicionar elementos em um bloco de conteudo usando top, left, right, bottom. Precisa está CONTIDO em uma caixa de conteudo de POSITION RELATIVE! */
+    top: 149px;
+    left: 164px;
+    z-index: -1;
+}
+
+.qualidade img {
+    margin: 0 auto; /* macete para centralizar */
+}
+
+.qualidade_lista li{
+    text-align: center;
+    padding: 20px 40px;
+}
+
+.qualidade_lista li h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    padding-top: 10px;
+}
+
+.qualidade_lista li h3::after {
+    content: ""; /* SEMPRE COLOQUE CONTENT! */
+    display: block; /* Normal in-line*/
+    width: 60px;
+    height: 3px;
+    background-color: black;
+    margin: 6px auto;  
+}
+
+/* quebra */
+
+.quebra {
+    width: 100%;
+    height: 200px;
+    background: url("../img/bg-footer.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;    
+}
+
+.quebra .quote-externo {
+    max-width: 380px;
+    padding-top: 30px;
+}
+
+/* footer */
+
+.footer {
+    width: 100%;
+    background-color: black;
+    padding: 20px 0;
+    color: white;
+}
+
+.footer h3{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    color: #fec63e;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.footer h3::after{
+    content: ""; /* SEMPRE COLOQUE CONTENT! */
+    display: block; /* Normal in-line*/
+    width: 60px;
+    height: 3px;
+    background-color: #fec63e;
+    margin: 6px 0 12px 0;     
+}
+
+.footer_historia {
+    padding-right: 70px;
+}
+
+.footer_contato ul li{
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer_redes ul li{
+    display: inline-block; /* Semelhante ao inline, no entanto, ao definirmos inline-block em um elemento, conseguimos definir as propriedades de largura e altura para ele. 
+    Resumindo, os elementos são expostos em linha, mas possuem a propriedade de block*/
+    margin-right: 10px;
+}
+
+
+.footer_redes ul li a{
+    border: 3px #fec63e solid;
+    display: block; /* O elemento se comporta como um bloco. Ocupando praticamente toda a largura disponível na página.
+    São passados para block para que seja possivel o uso da propriedade border*/
+    padding: 10px;
+}
+
+.footer_redes ul li a:hover{
+    border: 3px white solid;
+}
+
+.copy {
+    width: 100%;
+    background-color: #fec63e;
+}
+
+.copy p {
+    font-family: arial;
+    padding: 20px 0;
+}
+
+
+
+
+/* ----- SOBRE ----- */
+
+/* Titulo */
+
+.titulo-sobre {
+    background: url(../img/bg-sobre.jpg) center no-repeat;
+    background-size: cover;
+}
+
+/* Visão, missão e historia */
+
+.conteudo-sobre {
+    padding-top: 60px
+}
+
+.conteudo-sobre p {
+    line-height: 25px;
+    padding-bottom: 25px;
+    max-width: 520px;
+    font-size: 18px;
+}
+
+.conteudo-sobre ul li p{
+    padding-bottom: 10px;
+}
+
+.imagem-equipe {
+    padding-top: 60px;
+}
+
+/* Qualidade */
+
+.qualidade_sobre {
+    margin-bottom: 200px;
+}
+
+
+/* ---- PRODUTOS ----*/
+
+/* titulo */
+
+.titulo-produtos {
+    background: url(../img/bg-produtos.jpg) center no-repeat;
+    background-size: cover;
+}
+
+
+/* display dos produtos */
+
+.produto_item {
+    padding-top: 60px;
+}
+
+.produto_item h2 {
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: bold;
+    position: relative;
+    top: -180px;
+    margin-bottom: -56px;    
+}
+
+.produto_item h2::after, .produto_item h2::before  {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: white;
+    margin: 6px auto 6px auto;
+}
+
+.produto_icone {
+    background-color: black;
+    padding: 70px 0;    
+}
+
+.produto_icone img{
+    margin: 0 auto;
+} 
+
+.produto_info {
+    background-color: black;
+}
+
+.produto_info p {
+    color: white;
+    font-size: 18px;
+    line-height: 25px;
+    height: 180px;
+    padding: 30px 40px;
+}
+
+.produto_info ul li {
+    background: #fec63e;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    float: left;
+    width: 229px;
+    height: 49px;
+    padding-top: 16px;
+}
+
+.produto_info ul li:nth-child(even) {
+    margin-left: 2px;
+}
+
+.produto_info ul li:nth-child(1), .produto_info ul li:nth-child(2) {
+    margin-bottom: 2px;
+}
+
+
+/* ORÇAMENTO */
+
+.orcamento {
+    margin-top: 60px;
+    width: 100%;
+    background-color: black;
+    padding: 40px 0;
+}
+
+.orcamento .subtitulo {
+    color: #fec63e;
+}
+
+.orcamento .subtitulo::after {    
+    background-color: #fec63e;    
+}
+
+/* Formulario orçamento */
+
+.form {
+    padding-right: 60px;
+}
+
+.form label {
+    display: block;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 4px;
+}
+
+.form input {
+    display: block;
+    width: 100%;
+    border: 4px solid #fec63e;
+    background: none;
+    color: white;
+    padding: 7px 5px;
+    margin-bottom: 10px;
+    outline: none;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.form textarea {
+    display: block;
+    width: 100%;
+    height: 120px;
+    border: 4px solid #fec63e;
+    background: none;
+    color: white;
+    padding: 7px 5px;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;    
+    resize: none;
+}
+
+.form button {
+    padding: 7px 40px;
+	background: none;
+}
+
+/* Dados Orçamento */
+
+.orcamento_dados {
+    color: white;
+}
+
+.orcamento_dados h3 {
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #fec63e;
+    font-weight: bold;
+}
+
+.orcamento_dados span {
+    display: block;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 30px;
+}
+.orcamento_dados span:nth-of-type(2) {
+    margin-bottom: 30px;
+}
+
+.orcamento_dados p {
+    margin: 8px 0;
+}
+
+.orcamento_dados ul {
+    padding-right: 60px;
+}
+
+.orcamento_dados ul li {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    padding: 10px 15px;
+}
+
+.orcamento_dados ul li:nth-child(odd) { 
+    background: #1d1d1d;
+}
+
+/* ----- PORTFOLIO -----*/
+
+/* Titulo */
+
+.titulo-portfolio {
+    background: url(../img/bg-portfolio.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.quote_clientes {
+    padding: 60px 0;
+    max-width: 460px;
+    margin: 0 auto;
+}
+
+.quote_clientes p {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 25px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.quote_clientes cite {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    font-style: normal;
+    float: right;
+}
+
+.portfolio {
+    margin-bottom: 0;
+}
+
+
+/* ----- CONTATO ----- */
+
+/* Titulo */
+
+.titulo-contato {
+    background: url(../img/bg-contato.jpg) center no-repeat;
+    background-size: cover;
+}
+
+/* Orçamento */
+.orcamento {
+    padding: 40px 0;
+}
+
+
+/* Formulario orçamento */
+
+.contato {
+    padding-top: 40px;
+}
+
+.contato_form {
+    padding-right: 60px;
+}
+
+.contato_form label {
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 4px;
+}
+
+.contato_form input {
+    display: block;
+    width: 100%;
+    border: 4px solid #fec63e;
+    background: none;
+    padding: 7px 5px;
+    margin-bottom: 10px;
+    outline: none;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contato_form textarea {
+    display: block;
+    width: 100%;
+    height: 120px;
+    border: 4px solid #fec63e;
+    background: none;
+    padding: 7px 5px;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;    
+    resize: none;
+}
+
+.contato_form button {
+    padding: 7px 40px;
+	background: none;
+}
+
+/* Dados contato */
+
+.contato_dados h3 {
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #fec63e;
+    font-weight: bold;
+}
+
+.contato_dados span {
+    display: block;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 30px;
+}
+
+.contato_dados span:nth-of-type(even) {
+    margin-bottom: 30px;
+}
+
+.contato_dados ul{
+    margin-top: 10px;
+}
+.contato_dados ul li{
+    display: inline-block; /* Semelhante ao inline, no entanto, ao definirmos inline-block em um elemento, conseguimos definir as propriedades de largura e altura para ele. 
+    Resumindo, os elementos são expostos em linha, mas possuem a propriedade de block*/
+    margin-right: 10px;
+}
+
+.contato_dados ul li a{
+    border: 3px #fec63e solid;
+    display: block; /* O elemento se comporta como um bloco. Ocupando praticamente toda a largura disponível na página.
+    São passados para block para que seja possivel o uso da propriedade border*/
+    padding: 10px;
+}
+
+.contato_dados ul li a:hover{
+    border: 3px black solid;
+}
+
+/* mapa */
+
+.contato_mapa {
+    margin-bottom: 60px;
+}
+
+/* Config Scripts JS*/
+
+.js [data-slide] {
+    position: relative;
+  }
+.js [data-slide] > * {
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+  }
+.js [data-slide] > .active {
+    position: relative;
+    opacity: 1;
+    transition: opacity 500ms;
+  }
+
+.js [data-slide-nav] {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+  }
+
+.js [data-slide-nav] button {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 4px;
+    border: 0px;
+    border-radius: 6px;
+    text-indent: -99px;
+    overflow: hidden;
+    background-color: #1d1d1d ; 
+    outline: none;
+  }
+
+.js [data-slide-nav] button.active {
+      background-color: #fec63e;
+  }
+
+.js [data-anime] {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+}
+
+
+.js .fadeInDown {    
+    transform: translate3d(0, -20px, 0);
+}
+
+.js .anime {
+    opacity: 1;
+    transform: none;
+    transition: opacity 800ms, transform 800ms;    
+}
+
+/* anti-spam */
+
+.nao-aparece {
+    visibility: hidden;
+    height: 0px;
+    position: absolute;
+}
+
+/*Mensagens do formulário*/
+
+#form-sucesso {
+    color: green;
+}
+
+#form-erro {
+    color: red;
+}
